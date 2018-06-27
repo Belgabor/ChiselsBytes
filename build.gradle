@@ -54,8 +54,17 @@ minecraft {
     it.options.compilerArgs += ['-source', '1.8', '-target', '1.8', '-Xlint:unchecked']
 }
 
+repositories {
+     maven {
+        name "DVS1 Maven FS'"
+        url 'http://dvs1.progwml6.com/files/maven'
+    }
+}
 
 dependencies {
+    deobfCompile 'mod.chiselsandbits:chiselsandbits:13.0.89'
+    
+    
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"
